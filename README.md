@@ -16,23 +16,22 @@ class OrderedVector:
         self.capacity = capacity
         self.last_position = -1
         self.value_list = np.empty(self.capacity, dtype=int)
-python´´´
-
+```
 Initializes an ordered vector with the specified capacity.
 
 ### 2. Printing
-
+```python
 def print(self):
         if self.last_position == -1:
             print('List is empty')
         else:
             for i in range(self.last_position + 1):
                 print(i, ' - ', self.value_list[i]
-
+```
 Prints the elements of the vector.
 
 ### 3. Add
-
+```python
 def add(self, value):
         if self.last_position == self.capacity - 1:
             print('Maximum capacity reached')
@@ -53,11 +52,12 @@ def add(self, value):
         
         self.value_list[position] = value
         self.last_position += 1
-
+```
 Adds an element to the vector, maintaining ascending order.
 
 ### Notes
-
+```
 - If the maximum capacity is reached, a message indicating that the maximum capacity has been reached will be displayed.
 - The class uses the NumPy library for creating the vector.
 
+```
