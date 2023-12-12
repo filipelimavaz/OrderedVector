@@ -15,7 +15,8 @@ class OrderedVector:
     def __init__(self, capacity):
         self.capacity = capacity
         self.last_position = -1
-        self.value_list = np.empty(self.capacity, dtype=int)´´´
+        self.value_list = np.empty(self.capacity, dtype=int)
+python´´´
 
 Initializes an ordered vector with the specified capacity.
 
